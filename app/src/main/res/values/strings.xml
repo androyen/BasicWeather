@@ -18,5 +18,7 @@
     <string name="weather_drizzle">&#xf01c;</string>
 
     <string name="place_not_found">Sorry, no weather data found.</string>
+    <string name="dialog_change_city">Change city</string>
+    <string name="dialog_go">Go</string>
 
 </resources>

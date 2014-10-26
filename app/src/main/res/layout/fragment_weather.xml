@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_centerHorzontal="true"
+        android:layout_centerHorizontal="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="70sp"/>
 
@@ -40,7 +40,7 @@
         android:id="@+id/currentTemperatureField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBotton="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="40sp"/>
