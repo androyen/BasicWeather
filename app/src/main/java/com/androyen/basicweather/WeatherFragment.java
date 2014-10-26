@@ -1,13 +1,15 @@
 package com.androyen.basicweather;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.TextView;
 
 
 /**
@@ -31,6 +33,17 @@ public class WeatherFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
+    Typeface weatherFont;
+
+    TextView cityField;
+    TextView updatedField;
+    TextView detailsField;
+    TextView currentTemperatureField;
+    TextView weatherIcon;
+
+    Handler handler;
+
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -49,7 +62,7 @@ public class WeatherFragment extends Fragment {
         return fragment;
     }
     public WeatherFragment() {
-        // Required empty public constructor
+        handler = new Handler();
     }
 
     @Override
@@ -64,8 +77,17 @@ public class WeatherFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_weather, container, false);
+        View rootView =inflater.inflate(R.layout.fragment_weather, container, false);
+        cityField = (TextView)rootView.findViewById(R.id.cityField);
+        updatedField = (TextView)rootView.findViewById(R.id.updatedField);
+        detailsField = (TextView)rootView.findViewById(R.id.detailsField);
+        currentTemperatureField = (TextView)rootView.findViewById(R.id.currentTemperatureField);
+        weatherIcon = (TextView)rootView.findViewById(R.id.weatherIcon);
+
+        weatherIcon.setTypeface(weatherFont);
+        return rootView;
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
