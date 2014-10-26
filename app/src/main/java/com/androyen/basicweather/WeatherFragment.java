@@ -198,6 +198,10 @@ public class WeatherFragment extends Fragment {
         weatherIcon.setText(icon);
     }
 
+    public void changeCity(String city) {
+        updateWeatherData(city);
+    }
+
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
