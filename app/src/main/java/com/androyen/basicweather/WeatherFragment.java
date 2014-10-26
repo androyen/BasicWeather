@@ -143,7 +143,7 @@ public class WeatherFragment extends Fragment {
             );
 
             currentTemperatureField.setText(
-                    String.format("%.2f", main.getDouble("temp")) + " ("
+                    String.format("%.2f", main.getDouble("temp"))
             );
 
             DateFormat df = DateFormat.getDateTimeInstance();

@@ -5,4 +5,4 @@
     android:layout_height="match_parent"
     tools:context="com.androyen.basicweather.WeatherActivity"
     tools:ignore="MergeRootFrame"
-    android:background="#FF0099CC"/>
+    android:background="#77EB37"/>
